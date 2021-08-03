@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    min-height: 720px;
+    background-color: aliceblue;
+}
+
+.content-slide {
+    min-height: 620px;
+}
+
+.header {
+    min-height: 90px;
+    background-color: #09096a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.header h1 {
+    font-size: 25px;
+}
+
+.item {
+    min-height: 610px;
+}
+
+.footer .line {
+    height: 5px;
+    background-color: #09096a;
+}
+.text-footer {
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text-footer h2 {
+    font-size: 35px;
+    color: #7676767d;
+}
+
+.menu{
+    /* padding: 5px 0; */
+    display: flex;
+}
+.array{
+    width: 75%;
+    max-height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+    overflow-y: scroll;
+}
+.array::-webkit-scrollbar{
+    width: 1px;
+}
+.array::-webkit-scrollbar-track{
+    background: #F4F4F4;
+}
+.array::-webkit-scrollbar-thumb{
+    background: #1287A5;
+    border-radius: 10px;
+}
+.array::-webkit-scrollbar-thumb:hover{
+    background: rgb(48, 188, 223);
+}
+
+.elements{
+    background-color: #99AAAB;
+    border:0.1px solid #EEE;
+    height: auto;
+}
+
+.frame-search {
+    max-height: 400px;
+    max-width: 550px;
+    overflow: hidden;
+}
+
+.frame-array {
+    max-height: 250px;
+    max-width: 550px;
+    overflow: hidden;
+}
+.controls{
+    width:100%;
+    padding:4px;
+    position: relative;
+}
+select{
+    width:10rem;
+    padding:10px;
+    background-image: linear-gradient(135deg, #758AA2,rgba(40, 164, 196, 0.76));
+    border-radius: 5px;
+    outline: 0;
+    /* color: #FFF; */
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+select:hover{
+    background-color: grey;
+}
+select optgroup[label]{
+    padding:10px 0;
+}
+option {
+    padding:10px;
+}
+.swapCount{
+    display: none;
+}
+input#num{
+    width:100px;
+    padding:10px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+span#errorMsg{
+    color: red;
+    height: 10px;
+}
+button{
+    padding:5px;
+    margin:5px;
+    border-radius:10px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 0.9rem;
+    background-image: linear-gradient(135deg, #758AA2,rgba(40, 164, 196, 0.76));
+    box-shadow: 1px 2px 5px grey;
+}
+button:active{
+    color: black;
+    background-image: linear-gradient(135deg, rgb(159, 195, 236),rgba(143, 201, 216, 0.76));
+    box-shadow: 0px 0px 2px 1px grey;
+}
+
+@media screen and (max-width:768px){
+    nav{
+        flex-direction: column;
+    }
+}
